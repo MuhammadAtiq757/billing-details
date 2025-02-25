@@ -5,11 +5,11 @@ import apiRequestHandler from "./utils/apiRequestHandler";
 import { generatePassword } from "./utils/generatePassword";
 
 // TODO: Update with selected plan or challenge data
-const planData = challenges.ff5kOneStepP1;
-
+const planData = challenges.ff50kInstantF;
 const selectedChallengeName = planData?.challengeName;
-
 const challengeStage = planData?.currentPhase;
+
+
 
 let group;
 
@@ -99,7 +99,7 @@ const BillingDetails = () => {
 					EMail: data?.email,
 					master_pass: generatePassword(),
 					investor_pass: generatePassword(),
-					amount: 205059.6, // TODO: Update with the BALANCE amount
+					amount: 51922.22, // TODO: Update with the BALANCE amount
 					FirstName: `Foxx Funded - ${sanitizedChallengeName} (${challengeStage})  ${variables?.first} ${variables?.last}`,
 					LastName: variables?.last,
 					Leverage: 30,
@@ -196,9 +196,9 @@ const BillingDetails = () => {
 		event.preventDefault();
 
 		const infos = {
-			email: "clashking1545@gmail.com", // TODO: Update with actual user email
-			first: "Sajid", // TODO: Update with actual user first name
-			last: "Abd", // TODO: Update with actual user last name
+			email: "timypanossian@gmail.com", // TODO: Update with actual user email
+			first: "Timy", // TODO: Update with actual user first name
+			last: "Panossian", // TODO: Update with actual user last name
 			challengeData: planData,
 		};
 
